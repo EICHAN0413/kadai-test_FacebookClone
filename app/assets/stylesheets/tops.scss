@@ -1,0 +1,25 @@
+header {
+    width: 100%;
+    height: 50px;
+}
+
+.top_menu li{
+    float: left;
+    padding: 10px;
+
+}
+
+.top_menu {
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+}
+
+.top_menu ul {
+    list-style: none;
+    font-size: 15px;
+}
+
+

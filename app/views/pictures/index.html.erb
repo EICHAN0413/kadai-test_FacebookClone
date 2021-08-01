@@ -1,0 +1,40 @@
+<body>
+  <div class="post_content">
+
+    <div class="side_content">
+     <h1>コンテンツ（準備中）</h1>
+    </div>
+    
+    <div class="content_form">
+      <% @pictures.each do |picture| %>
+      <div class ="posted_box">
+        
+        <ul class="posted_content">
+          <li>ユーザ名：<%= picture.user.name %></li>
+          <li><%= picture.content %></li>
+        </ul>
+
+        <ul class="posted_picture">
+          <li><%= image_tag picture.image.url, width: '100%', height: '100%' %></li>
+        </ul>
+
+        <ul class="create_form clearfix">
+          <li class="col-md-2"><%= link_to '詳細', picture %></li>
+          <li class="col-md-2"><%= link_to '編集', edit_picture_path(picture) %></li>
+          <li class="col-md-2"><%= link_to '削除', picture, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+        </ul>
+
+      </div>
+      <% end %>
+    </div>
+
+    <div class="all_friends">
+      <h1>友だち一覧（準備中）</h1>
+    </div>
+
+
+
+  </div>
+
+  <footer></footer>
+</body>
